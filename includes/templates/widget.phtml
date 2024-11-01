@@ -1,0 +1,16 @@
+<h2 class="widgettitle"><?php echo __('Aggregated tweets') ?></h2>
+<ul class="tweetygator_tweets">
+<?php
+    foreach ($this->entries as $entry) {
+?>
+    <li>
+        <span class="tweetygator_tweet"><?php echo $entry->text ?></span>
+        <span class="tweetygator_userinfo">
+            <?php echo __('By ') ?>
+            <a href="http://twitter.com/<?php echo $entry->from_user ?>"><?php echo $entry->from_user ?></a>
+            <?php echo __(' at ') ?>
+            <?php echo strftime('%c', strtotime($entry->created_at)) ?>
+        </span>
+    </li>
+<?php } ?>
+</ul>

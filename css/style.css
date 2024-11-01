@@ -1,0 +1,11 @@
+#sidebar ul ul.tweetygator_tweets li {
+    margin-bottom: 10px;
+}
+
+.tweetygator_tweet {
+    font-style: italic;
+}
+
+.tweetygator_userinfo {
+    display: block;
+}

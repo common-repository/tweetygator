@@ -1,0 +1,10 @@
+<div>
+    <h2><?php echo __('TweetyGator settings') ?></h2>
+    <p><?php echo __('With these settings, you can define the behavior of the widget. To customize display options of the widget, go to <a href="/wp-admin/widgets.php">Appearance &gt; Widgets</a>') ?></p>
+    <form action="options.php" method="post">
+        <?php settings_fields('tweetygator_options'); ?>
+        <?php do_settings_sections('tweetygator'); ?>
+
+        <input name="Submit" type="submit" value="<?php esc_attr_e('Save Changes'); ?>" />
+    </form>
+</div>
